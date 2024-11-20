@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Times New Roman; 
+}
+
+html, body {
+  background: linear-gradient(45deg, #030918, #180317);
+  height: 100%;
+  color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+.gap {
+  gap: 15px;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 35rem;
+  height: 35rem;
+  background-color: #121875;
+}
+
+input, select, button {
+  font-size: 2em;
+  width: 9rem;
+  height: 5rem;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+
+input {
+  background-color: #e1f0f1;
+}
+button {
+  background-color: #85dfc9;
+  cursor: pointer;
+}
+
+.radius {
+  border-radius: 1rem;
+}
+
+.copy {
+  background-image: url('/assets/clipboard-fill.svg');
+}
+
+.copy-check {
+  background-image: url('/assets/clipboard-check-fill.svg');
+}
+
+.copy-icon {
+  height: 2.5rem;
+  width: 2.5rem; 
+  background-size: cover; 
+}
+
+.info {
+  text-align: center;
+  display: none; 
+  font-size: 2rem; 
+}
+
+.info div {
+  border: solid 1px;
+  padding: 10px;
+}
+
+@media (max-width: 767px) {
+  html, 
+  body {
+    font-size: 2vw; 
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  html, 
+  body {
+    font-size: 1.5vw;
+  }
+}
+
+@media (min-width: 1025px) {
+  html, 
+  body {
+    font-size: 1vw;
+  }
+}
